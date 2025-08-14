@@ -45,7 +45,7 @@ This dataset is designed for training models to identify GPS signal anomalies in
 * Time Reference: GPS Time
 
 ## Citation & Acknowledgments
-Data sourced from CDDIS: Crustal Dynamics Data Information System.
+All data is sourced from [CDDIS: Crustal Dynamics Data Information System](https://www.earthdata.nasa.gov/centers/cddis-daac)
 
 ## License
 CC BY 4.0 (Creative Commons Attribution)
