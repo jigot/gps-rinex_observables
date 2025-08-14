@@ -10,7 +10,7 @@ This dataset contains processed clean GPS RINEX (Receiver Independent Exchange F
 * Coverage: 11 randomly selected days
 * Source: CDDIS (Crustal Dynamics Data Information System) Hatanaka 1Hz Dataset
 
-### 2. Non-Temporal Data (snapshots)
+### 2. Snapshot Data (nontemporal)
 * Files: 1 CSV file
 * Dimensions: ~43,840 snapshots × 16 features
 * Coverage: Daily snapshots across 5 years (2019-2024)
