@@ -12,7 +12,7 @@ This dataset contains processed clean GPS RINEX (Receiver Independent Exchange F
 
 ### 2. Static Snapshot Data (nontemporal)
 * Files: 1 CSV file
-* Dimensions: ~43,840 snapshots × 16 features
+* Dimensions: 41,221 snapshots × 16 features
 * Coverage: Daily snapshots across 5 years (2019-2024)
 * Sampling: 20 random snapshots per day from 2,192 days
 * Source: CDDIS Low Rate GNSS Dataset
