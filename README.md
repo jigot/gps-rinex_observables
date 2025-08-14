@@ -1,31 +1,30 @@
-# gps-rinex_observables
-## GPS RINEX Observable Data for Anomaly Detection
-This dataset contains processed clean GPS RINEX (Receiver Independent Exchange Format) observational data specifically prepared for training anomaly detection models. The data has been extracted and converted from standard RINEX format to CSV for easier analysis and machine learning applications.
-
-
+# GPS RINEX Observable Data for Anomaly Detection
 ## Overview
 This dataset contains processed clean GPS RINEX (Receiver Independent Exchange Format) observational data specifically prepared for training anomaly detection models. The data has been extracted and converted from standard RINEX format to CSV for easier analysis and machine learning applications.
-Dataset Structure
-## Two Data Formats Available:
-### 1. Temporal Data (Time Series Analysis)
+## Dataset Structure (two data formats available):
+### 1. Temporal Data (for time series analysis)
 Files: 1,052 CSV files
 Dimensions: 900 time steps × 16 features per file
 Sampling Rate: 1 Hz continuous data
 Duration: 15 minutes per file (900 seconds)
 Coverage: 11 randomly selected days
 Source: CDDIS (Crustal Dynamics Data Information System) Hatanaka 1Hz Dataset
-### 2. Non-Temporal Data (Snapshots)
+### 2. Non-Temporal Data (snapshots)
 Files: 1 CSV file
 Dimensions: ~43,840 snapshots × 16 features
 Coverage: Daily snapshots across 5 years (2019-2024)
 Sampling: 20 random snapshots per day from 2,192 days
 Source: CDDIS Low Rate GNSS Dataset
-Feature Description
+## Feature Description
 Each data sample contains 16 features derived from 4 randomly selected GPS satellites, with 4 observables per satellite:
+| Observable | Description | Unit |
+|------------|-------------|------|
+| **C1C** | Pseudorange measurement on L1 C/A code | Meters |
+| **L1C** | Carrier phase measurement on L1 frequency | Cycles |
+| **D1C** | Doppler frequency on L1 | Hz |
+| **S1C** | Signal strength (C/N0) on L1 C/A | dB-Hz |
 
-
-
-Feature Layout: For each sample, features are arranged as: [C1C_1, L1C_1, D1C_1, S1C_1, C1C_2, L1C_2, ..., S1C_4]
+Feature Layout: For each sample, features are arranged as: [C1C_1, L1C_1, D1C_1, S1C_1, C1C_2, L1C_2, ..., S1C_4].
 
 ## Data Processing Pipeline
 Source Data: Raw RINEX files from CDDIS archive
